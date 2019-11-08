@@ -26,3 +26,7 @@ set foldlevelstart=10
 set foldnestmax=10
 nnoremap <space> za
 set foldmethod=indent
+
+"maps CTRL-S to save
+nmap <c-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
