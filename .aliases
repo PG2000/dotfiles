@@ -33,3 +33,4 @@ alias week='date +%V'
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias myip='curl ipinfo.io/ip'
+alias tmuxa='tmux attach-session -t'
