@@ -34,3 +34,11 @@ alias week='date +%V'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias myip='curl ipinfo.io/ip'
 alias tmuxa='tmux attach-session -t'
+
+if [ -x "$(command -v kubectl)" ]; then 
+  alias k="kubectl" 
+fi
+
+if [ -x "$(command -v terraform)" ]; then
+  alias tf="terraform"
+fi
