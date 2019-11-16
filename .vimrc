@@ -1,10 +1,12 @@
 set nocompatible
 filetype off
 
+set rtp+=/usr/local/opt/fzf
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'stephpy/vim-yaml'
 call vundle#end()
 filetype plugin indent on
 filetype plugin on

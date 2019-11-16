@@ -1,5 +1,17 @@
 # dotfiles
 
+## Install fzf
+
+### Brew
+
+```sh
+brew install fzf
+```
+### Fedora
+
+```sh
+sudo dnf install fzf
+```
 
 ## Install Vundle Plugin Manager
 ```sh
