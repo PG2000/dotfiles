@@ -42,3 +42,9 @@ fi
 if [ -x "$(command -v terraform)" ]; then
   alias tf="terraform"
 fi
+
+if [ -x "$(command -v ggrep)" ]; then 
+  alias grep="ggrep" 
+fi
+
+
