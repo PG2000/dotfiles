@@ -7,6 +7,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'stephpy/vim-yaml'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+
 call vundle#end()
 filetype plugin indent on
 filetype plugin on
@@ -20,7 +23,7 @@ syntax enable
 set tabstop=4
 set softtabstop=4
 set expandtab
-set number
+set number relativenumber
 set showcmd
 set cursorline
 set foldenable
