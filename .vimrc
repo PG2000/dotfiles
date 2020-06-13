@@ -1,18 +1,14 @@
 set nocompatible
-filetype off
-
 set rtp+=/usr/local/opt/fzf
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'stephpy/vim-yaml'
-Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
 
-call vundle#end()
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'stephpy/vim-yaml'
+Plug 'tpope/vim-fugitive'
+Plug 'bling/vim-airline'
+call plug#end()
+
 filetype plugin indent on
-filetype plugin on
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -24,11 +20,14 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 set number relativenumber
+set hls is
 set showcmd
 set cursorline
 set foldenable
 set foldlevelstart=10
 set foldnestmax=10
+set wildmenu
+set hidden
 nnoremap <space> za
 set foldmethod=indent
 
