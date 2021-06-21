@@ -23,6 +23,7 @@ set number relativenumber
 set hls is
 set showcmd
 set cursorline
+set cursorcolumn
 set foldenable
 set foldlevelstart=10
 set foldnestmax=10
