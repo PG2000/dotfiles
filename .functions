@@ -4,3 +4,11 @@
 function mkd() {
 	mkdir -p "$@" && cd "$_";
 }
+
+function x509check() {
+    openssl x509 -text -noout -in $1
+}
+
+function x509checkIn() {
+    openssl x509 -text -noout $1
+}
